@@ -1,5 +1,19 @@
 
+.hide-mobile {
+      display: none;
+}
 
 body {
-    background: black;
+    background-color: #fffbf3;
+    margin: 0;
+    font-family: 'Inter';
+}
+
+.wrap {
+    margin: 2em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
 }
