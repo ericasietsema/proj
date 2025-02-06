@@ -16,15 +16,15 @@
           <img src="logo.svg" alt="Friskay Logo" />
         </a>
         <div class="divider hide-mobile"></div>
-        <a href="#" class="home hide-mobile">home</a>
-      </div>
+        <a href="#" class="home hide-mobile">Home</a>
+      </div>  
       <nav>
         <a href="#" class="menu-open hide-desktop">
           <img src="menu.svg" alt="Open menu" />
         </a>
         <ul>
           <li>
-            <a href="#">
+            <a href="#" class="menu-close">
               <img src="close.svg" alt="close menu">
             </a>
           </li>
@@ -51,5 +51,18 @@
         <div class="outer-circle"></div>
       </div>
     </div>
+    <script>
+      const menu = document.querySelector('nav ul');
+      const menuBtn = document.querySelector('.menu-open');
+      const closeBtn = document.querySelector('.menu-close');
+
+      menuBtn.addEventListener('click' , () => {
+        menu.classList.add('open')
+      })
+
+      closeBtn.addEventListener('click' , () => {
+        menu.classList.remove('open')
+      })
+    </script>
   </body>
 </html>
